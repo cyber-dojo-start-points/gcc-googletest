@@ -1,6 +1,6 @@
 {
-  "image_name": "cyberdojofoundation/gcc_googletest:4ef2b73",
-  "display_name": "C (gcc), GoogleTest",
+  "image_name": "ghcr.io/cyber-dojo-languages/gcc_googletest:76fffa0",
+  "display_name": "C (gcc 14.3.0), GoogleTest 1.16.0",
   "visible_filenames": [
     "hiker.tests.cpp",
     "hiker.c",
