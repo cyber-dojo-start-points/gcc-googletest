@@ -1,5 +1,5 @@
 {
-  "image_name": "ghcr.io/cyber-dojo-languages/gcc_googletest:6e73287",
+  "image_name": "ghcr.io/cyber-dojo-languages/gcc_googletest:f67bac4",
   "display_name": "C (gcc 15.2.0), GoogleTest 1.16.0",
   "language": [
     "C (gcc)",
@@ -16,6 +16,7 @@
     "makefile",
     "cyber-dojo.sh"
   ],
+  "rag_lambda": "red_amber_green.rb",
   "filename_extension": [
     ".c",
     ".h",
