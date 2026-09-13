@@ -1,0 +1,8 @@
+{
+  "match_counts": {
+    "undefined reference to .checksum.$": 1,
+    "^collect2: error: ld returned 1 exit status$": 1,
+    "^\\[ RUN      \\] ": 0,
+    "^\\[  FAILED  \\] ": 0
+  }
+}

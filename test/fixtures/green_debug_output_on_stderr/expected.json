@@ -1,0 +1,8 @@
+{
+  "max_output_lines": 30,
+  "matches": [ "^answer was called$" ],
+  "match_counts": {
+    "^\\[       OK \\] Hiker\\.": 1,
+    "^\\[  PASSED  \\] 1 test\\.$": 1
+  }
+}

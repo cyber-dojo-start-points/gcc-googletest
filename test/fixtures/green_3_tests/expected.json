@@ -1,0 +1,7 @@
+{
+  "max_output_lines": 30,
+  "match_counts": {
+    "^\\[       OK \\] Hiker\\.": 3,
+    "^\\[  PASSED  \\] 3 tests\\.$": 1
+  }
+}

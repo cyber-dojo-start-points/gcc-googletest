@@ -1,0 +1,7 @@
+{
+  "max_output_lines": 30,
+  "match_counts": {
+    "^\\[       OK \\] FizzBuzz\\.": 1,
+    "^\\[  PASSED  \\] 1 test\\.$": 1
+  }
+}

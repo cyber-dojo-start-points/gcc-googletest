@@ -1,0 +1,8 @@
+{
+  "max_output_lines": 30,
+  "match_counts": {
+    "^\\[==========\\] Running 2 tests from 2 test suites\\.$": 1,
+    "^\\[       OK \\] ": 2,
+    "^\\[  PASSED  \\] 2 tests\\.$": 1
+  }
+}
