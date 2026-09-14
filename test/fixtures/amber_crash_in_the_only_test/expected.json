@@ -1,7 +1,7 @@
 {
   "match_counts": {
     "^\\[ RUN      \\] Hiker\\.Life_the_universe_and_everything$": 1,
-    "Segmentation fault$": 1,
+    "Segmentation fault": 1,
     "^\\[  PASSED  \\] ": 0,
     "^\\[  FAILED  \\] ": 0
   }

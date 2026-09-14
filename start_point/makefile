@@ -1,12 +1,13 @@
 CXXFLAGS += -I.
 CXXFLAGS += -std=c++2a
 CXXFLAGS += -Wall -Wextra
-CXXFLAGS += -fprofile-arcs -ftest-coverage
+COVERAGE_FLAGS += -fprofile-arcs -ftest-coverage
+CXXFLAGS += $(COVERAGE_FLAGS)
 
 CFLAGS += -I.
 CFLAGS += -std=c18
 CFLAGS += -Wall -Wextra -Werror
-CFLAGS += -fprofile-arcs -ftest-coverage
+CFLAGS += $(COVERAGE_FLAGS)
 
 GTEST_LIBS = -lgtest -lgtest_main -pthread
 
@@ -43,8 +44,12 @@ test: $(COMPILED_CPP_FILES) $(COMPILED_C_FILES) $(COMPILED_HPP_FILES)
 # are #included from other files and thus have a large span
 # of influence (unlike .cpp files which are not #included)
 
+# hiker.hpp compiled here and hiker.cpp compiled elsewhere both claim
+# hiker.gcno, so a learner's own source file can vanish from the coverage
+# report. The header holds no code to measure, so leaving coverage out of this
+# compile is what keeps the real coverage data intact.
 %.compiled_hpp: %.hpp
-	@$(CXX) -x c++ $(CXXFLAGS) -c -o $@ $<
+	@$(CXX) -x c++ $(filter-out $(COVERAGE_FLAGS),$(CXXFLAGS)) -c -o $@ $<
 
 %.compiled_h: %.h
 	@$(C) -x c $(CFLAGS) -c -o $@ $<
