@@ -1,6 +1,6 @@
 [![GitHub CI](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 
-### display_name="C (gcc 15.2), GoogleTest 1.17"
+### display_name="C (gcc 16.2.0), GoogleTest 1.18.0"
 ### image_name="[ghcr.io/cyber-dojo-languages/gcc_googletest](https://ghcr.io/cyber-dojo-languages/gcc_googletest)"
 
 ![cyber-dojo.org home page](https://github.com/cyber-dojo/cyber-dojo/blob/master/shared/home_page_snapshot.png)
